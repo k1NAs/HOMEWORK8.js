@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		function validate(login) {
+			const isValidRe = /^([A-Za-z])+([A-Za-z0-9\.]){1,9}$/g;
+			const numRe = /[0-9\.]+/g;
+
+			return {
+				valid: isValidRe.test(login),
+				numbers: login.match(numRe)
+			}
+		}
+
+
+		console.log(validate('ee1.1ret3'));
+		console.log(validate('ee1*1ret3'));
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+
+		function validate(email) {
+			const re = /^([0-9A-Za-z])+([-]?\w+)+([\@])([0-9A-Za-z])+(\.)(com|net|ua|org)$/;
+			if (email.match(re)) {
+				return 'Email is correct!';
+			} else {
+				return 'Email is not correct!';
+			};
+		}
+
+
+	</script>
+</body>
+
+</html>
